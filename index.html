@@ -1,9 +1,97 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <meta name="description" content="Personal website and portfolio for Tran Thiep."/>
-    <title>Thiep Tran</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+        <meta name="description" content="Personal website and portfolio for Tran Thiep."/>
+        <title>Thiep Tran Portfolio</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/thieppic.webp" alt=" Thiep Profile picture">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="cheese"></span>
+
+            </button>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#works" class="nav-link">Previous Work</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Home Section -->
+
+        <section class="intro" id="about">
+            <h1 class="section-title section-title-intro">
+                Hello, I'm <strong>Thiep Tran</strong>
+            </h1>
+            <p>Born and raise in Viet Nam, moved to Oregon in 2016 and attended Portland State University</p><br>
+            <p>Computer Science Major - Cloud Engineer</p>
+        </section>
+
+
+        <!-- Work Section -->
+
+        <section class="what-i-do" id="works">
+            <h2 class="section-title section-title-work">Previous Work </h2>
+            <div class="works">
+                <div class="work">
+                    <h3>Science Tutor</h3>
+                    <h5>Lane Community College - Eugene - Oregon</h5>
+                    <p>Math and computer tutor at Lane Community College, Helped students improve academically, provided study tips and project recommendations</p>
+                </div>
+                
+                <div class="work">
+                    <h3>Desktop Support</h3>
+                    <h5>Provenance Hotels - Portland - Oregon</h5>
+                    <p>Worked on-site and remote technical support to property and IT personnel. Identify, diagnose, and resolve software and hardware issues in a timely manner on mobile devices 
+                        and operating systems including Windows, Android, and iOS</p>
+                </div>
+                <div class="work">
+                    <h3>IT Support</h3>
+                    <h5>PSU School of Social Work - Portland - Oregon</h5>
+                    <p>Troubleshooting computer technical issues including MacOS and Windows</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section class="project-list" id="projects">
+            <h2 class="section-title section-title-project">Projects</h2>
+            <div class="projects">
+                
+                <div class="project">
+                    <h3>Chat App</h3>
+                </div>
+                <div class="project">
+                    <h3>Smart Brain</h3>
+                </div>
+                <div class="project">
+                    <h3>Robo Friends</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact  -->
+        <footer>
+            <a href="mailto:tranthiep191@gmail.com" class="footer-link">tranthiep191@gmail.com</a>
+            <ul class="contact-list">
+                <li class="contact-list-item"><a class="contact-list-link" href="https://www.facebook.com/thieptran19">Facebook</a></li>
+                <li class="contact-list-item"><a class="contact-list-link" href="https://www.linkedin.com/in/thiep-tran-434335138/">Linkedin</a></li>
+                <li class="contact-list-item"><a class="contact-list-link" href="https://twitter.com/Thiep25362268">Twitter</a></li>
+            </ul>
+        </footer>
+
+    </body>
 </html>
