@@ -91,6 +91,47 @@
 
         <footer>
             <h2 class="section-title section-title-info">Contact</h2>
+            <section class="user-input">
+                <h2>Have any questions?</h2>
+                <p>Please fill out the form below and I will contact you as soon as possible</p>
+                
+                <div class="message-form">
+                  <form id="target" action="javascript:alert( 'your information has been sent!' );">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Message</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+                  </form>
+                  <span></span>
+                </div>
+                
+                </body>
+                </html>
+                
+            </section>
             <a href="mailto:tranthiep191@gmail.com" class="footer-link">tranthiep191@gmail.com</a>
             
             <ul class="contact-list">
@@ -101,5 +142,6 @@
         </footer>
 
         <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     </body>
 </html>

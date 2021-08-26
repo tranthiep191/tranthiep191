@@ -150,11 +150,11 @@ header{
 }
 
 .nav-item{
-    text-decoration: none;
-    color: inherit;
+  
+    color: var(--clr-green);
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
-    text-decoration: none;
+    
 }
 
 .nav-item:hover {
@@ -163,11 +163,13 @@ header{
 
 .nav-toggle {
     padding: .25em;
-    background: var(--clr-green);
+    background: transparent;
     border: 0;
     margin-top: 10px;
+    position: absolute;
     height: 30px;
     cursor: pointer;
+    z-index: 1000;
 }
 .navigation {
     background:var(--clr-light);
@@ -182,11 +184,11 @@ header{
 .navigation,
 .navigation::before,
 .navigation::after {
-    background: var(--clr-dark);
+    background: green;
     width: 2em;
     height: 3px;
     border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 
 .navigation::before,
@@ -202,6 +204,8 @@ header{
 .nav-open .nav-bar {
     transform: translateX(0);
 }
+
+
 
 /* Intro */
 
@@ -308,12 +312,44 @@ margin: auto;
 }
 
 /* Footer */
-
-
+input[type=submit] {
+    background-color: var(--clr-dark);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+.message-form {
+    border-radius: 5px;
+ 
+    padding: 20px;
+  }
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
 footer {
+    padding: 2em 2em;
+  
+    width: 100%;
     background: var(--clr-green);
     color: var(--clr-dark);
-    text-align: center;
+   
 }
 footer a {
     color: var(--clr-dark);
@@ -325,3 +361,4 @@ footer a {
     list-style: none;
     
 }
+
