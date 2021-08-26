@@ -10,11 +10,3 @@ navItems.forEach(item => {
     })
 })
 
-$(document).ready(function(){
-    $("form").submit(function(){
-      alert("Submitted");
-    });
-    $("button").click(function(){
-      $("form").submit();
-    });  
-  });
